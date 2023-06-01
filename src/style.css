@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("./scroll.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato",sans-serif;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  background-color: #c35ff5;
+  align-items: center;
+  justify-content: center;
+}
+input ,button {
+  outline: none;
+  border: none;
+  font-family: "Lato", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+svg {
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+.from ,.to {
+  border: 1px solid #241312 ;
+  padding: .75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+:is(.from ,.to) svg{
+  rotate: 180deg;
+  margin-left: 5px;
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin: 1rem 0;
+}
+.currency input {
+  padding:1rem .75rem;
+  border: 2px solid #55555588;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  transition: all 500ms ease-in-out;
+}
+.currency input:focus {
+  border: 2px solid #6b0d9a74;
+  
+} 
+.currency label{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #000000d8;
+}
+
+ .currency_label {
+  font-weight: bold;
+  font-family: "Poppins";
+
+}
+
+.to_convert .swap svg {
+  width: 50px;
+}
+.to_convert {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.convertion_output p {
+  font-weight: 600;
+  color: #090909d4;
+}
+.exchange {
+  padding: .5rem;
+  background-color: #a90ef7;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.exchange:hover {
+  background-color: #a012e7;
+
+}
+.diolog {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem ;
+  background-color: #FFFFFF;
+  border-radius: .75rem;
+  min-height: 70%;
+  justify-content: space-around;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow-y:scroll ;
+  border: 1px solid #333;
+  padding: .5rem;
+  border-radius: 5px ;
+  margin-top: 3px;
+  font-weight: bold;
+  text-align: center;
+  overflow-x: hidden;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+}
+
+.pop {
+  display: none;
+}
+
+
+  .menu * {
+    padding: 5px ;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.menu *:hover {
+  cursor: pointer;
+  background-color: #a90ef7;
+}
+.convertion_output p {
+  width: 40ch;
+}
+.from,.to {
+  width: 120px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CorrencyConverter</title>
+  </head>
+  <body>
+    <main id="app">
+      <form class="diolog">
+        <h1>Currency Converter</h1>
+          <section class="currency">
+            <label for="amount">Enter Currency Amount</label>
+            <input name="amount" type="number" id="amount">
+          </section>
+          <section class="to_convert">
+            <div class="from">
+              <!-- <span>Fleg</span> -->
+              <span class="currency_label currency_in">Currency</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" version="1.1" viewBox="0 0 700 700">
+                <path d="m573.99 415.33c-6.1914 0.007813-12.129-2.4531-16.496-6.8359l-207.5-207.5-207.49 207.5c-5.8945 5.8945-14.484 8.1953-22.539 6.0391-8.0508-2.1562-14.34-8.4453-16.496-16.496-2.1562-8.0508 0.14453-16.645 6.0391-22.539l223.99-224c4.457-4.2148 10.359-6.5625 16.496-6.5625s12.039 2.3477 16.5 6.5625l223.99 224-0.003907-0.003906c4.375 4.3789 6.832 10.312 6.832 16.5s-2.457 12.121-6.832 16.496-10.309 6.8359-16.496 6.8359z"/>
+               </svg>
+            </div>
+            <div class="swap">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   version="1.1" viewBox="0 0 700 700">
+                <g>
+                 <path d="m524.25 275.32c-5.7969-3.8398-13.625-2.2578-17.461 3.5508l-18.207 27.492-305.89-0.003906c-5.0977 0-9.6875 3.0703-11.641 7.7773-1.9492 4.7031-0.86719 10.125 2.7344 13.73l84 84c2.457 2.457 5.6836 3.6914 8.9102 3.6914s6.4453-1.2305 8.9102-3.6914c4.9219-4.918 4.9219-12.898 0-17.82l-62.492-62.488h282.24c4.2266 0 8.1719-2.1172 10.504-5.6445l21.941-33.137c3.8477-5.8008 2.2539-13.617-3.5508-17.457zm-348.51 9.3594c2.1406 1.418 4.5547 2.1016 6.9453 2.1016 4.082 0 8.0938-1.9805 10.516-5.6445l18.207-27.492h305.89c5.0977 0 9.6875-3.0703 11.641-7.7773 1.9492-4.7031 0.86719-10.125-2.7344-13.73l-84-84c-4.9219-4.9219-12.898-4.9219-17.82 0-4.9219 4.918-4.9219 12.898 0 17.82l62.492 62.492h-282.24c-4.2266 0-8.1719 2.1172-10.504 5.6445l-21.941 33.137c-3.8477 5.793-2.2578 13.609 3.5469 17.449z"/>
+                </g>
+               </svg>
+            </div>
+            <div class="to">
+              <!-- <span>Fleg</span> -->
+              <span class="currency_label currency_out">Currency</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" version="1.1" viewBox="0 0 700 700">
+                <path d="m573.99 415.33c-6.1914 0.007813-12.129-2.4531-16.496-6.8359l-207.5-207.5-207.49 207.5c-5.8945 5.8945-14.484 8.1953-22.539 6.0391-8.0508-2.1562-14.34-8.4453-16.496-16.496-2.1562-8.0508 0.14453-16.645 6.0391-22.539l223.99-224c4.457-4.2148 10.359-6.5625 16.496-6.5625s12.039 2.3477 16.5 6.5625l223.99 224-0.003907-0.003906c4.375 4.3789 6.832 10.312 6.832 16.5s-2.457 12.121-6.832 16.496-10.309 6.8359-16.496 6.8359z"/>
+               </svg>
+            </div>
+          </section>
+          <div class="convertion_output">
+            <p class="output">Amount inCurrency  = result  outCurrency</p>
+          </div>
+          <button class="exchange">Get Extchange Rate</button>
+        </form>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
