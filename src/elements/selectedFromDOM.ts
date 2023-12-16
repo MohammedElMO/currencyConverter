@@ -1,7 +1,7 @@
 
 
 
-const  form = <HTMLFormElement>document.querySelector(".diolog")
+const form = <HTMLFormElement>document.querySelector(".diolog")
 const fromCurrency = <HTMLDivElement>document.querySelector(".from")
 const toCurrency =<HTMLDivElement> document.querySelector(".to")
 const outputText =<HTMLParagraphElement> document.querySelector(".output")
